@@ -9,7 +9,7 @@ function ImageAiPage() {
   const convertImage = () => {
     const payload = {
       "prompt": value,
-      "negative_prompt": "happy",
+      "negative_prompt": "smooth",
       "styles": ["normal"],
       "seed": -1,
       "subseed": -1,
@@ -61,6 +61,7 @@ function ImageAiPage() {
     }
     const fetch = async () => {
       const response = await axios.post('http://127.0.0.1:7860/sdapi/v1/txt2img', payload)
+      // const response = await axios.post('https://web3makers.animus.is/sdapi/v1/txt2img', payload)
       console.log(response.data);
       setImageData(response.data.images)
 
