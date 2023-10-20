@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import axios from 'axios'; // Import Axios
+// import axios from 'axios'; 
 // import './App.css';
 
 function Test() {
-  const [generatedImageID, setGeneratedImageID] = useState(null);
+//   const [generatedImageID, setGeneratedImageID] = useState(null);
   const [generatedImageURL, setGeneratedImageURL] = useState(null);
   const [value, setValue] = useState("");
   const [isLoading, setIsLoading] = useState(false); // State to track loading
@@ -15,11 +15,12 @@ function Test() {
   });
 
   const loadingMessages = [
-    "Searching for buried treasure...",
-    "Calibrating the quantum compass...",
-    "Contacting Blackbeard...",
-    "Adjusting the cyber cannons...",
-    "Checking the pirate code...",
+    // "Searching for buried treasure...",
+    // "Calibrating the quantum compass...",
+    // "Contacting Blackbeard...",
+    // "Adjusting the cyber cannons...",
+    // "Checking the pirate code...",
+    "Loading..."
   ];
 
   const getRandomLoadingMessage = () => {

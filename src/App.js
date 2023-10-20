@@ -1,5 +1,5 @@
 import './App.css';
-import ImageAiPage from './Pages/Image_Ai';
+// import ImageAiPage from './Pages/Image_Ai';
 import Test from './Pages/testAi/test';
 
 function App() {
