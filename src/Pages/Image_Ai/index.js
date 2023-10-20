@@ -60,7 +60,7 @@ function ImageAiPage() {
       "alwayson_scripts": {}
     }
     const fetch = async () => {
-      const response = await axios.post('http://80.39.126.197:3306/sdapi/v1/txt2img', payload)
+      const response = await axios.post('http://80.39.126.197/sdapi/v1/txt2img', payload)
       console.log(response.data);
       setImageData(response.data.images)
 
